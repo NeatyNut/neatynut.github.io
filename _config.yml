@@ -15,17 +15,17 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "NeatyNut Tech Stroy"
-title_separator          : "-"
-subtitle                 : "엑셀 만지던 사무직이 AI Developer까지"
+locale                   : "ko-KR"
+title                    : "NeatyNut's 기술 스토리"
+title_separator          : "|"
+subtitle                 : "for everyone"
 name                     : "NeatyNut"
-description              : "An amazing website."
+description              : "NeatyNut의 개인 블로그입니다."
 url                      : "https://neatynut.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/blog_logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "NeatyNut"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "항상 발전하는 사람이 되자"
+  avatar           : "/assets/images/git_logo.jpg"
+  bio              : "엑셀 만지던 사무직이 AI Developer까지"
   location         : "Suwon, Korea Republic"
   email            :
   links:
