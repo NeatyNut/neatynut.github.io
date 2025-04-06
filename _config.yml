@@ -106,7 +106,7 @@ analytics:
 # Site Author
 author:
   name             : "NeatyNut"
-  avatar           : "/assets/images/git_logo.jpg"
+  avatar           : "/assets/images/git_logo.png"
   bio              : "엑셀 만지던 사무직이 AI Developer까지"
   location         : "Suwon, Korea Republic"
   email            :
