@@ -141,4 +141,22 @@ ngrok http http://127.0.0.1:3000 --inspect=false
 - [ngrok](https://ngrok.com/)
 - [Hermes Agent](https://hermes-agent.nousresearch.com/docs)
 
-대화 화면 스크린샷은 아직 첨부하지 않았다. 공개할 이미지를 제공받으면 토큰·이메일·비공개 정보 노출 여부를 확인하고 추가할 예정이다.
+## 실제 Slack 대화로 보는 작업 흐름
+
+사용자가 제공한 실제 대화 화면이다. 공개용으로 실명과 Slack 프로필 사진을 가리고 휴대폰 상하단 UI를 잘랐다. 대화 본문은 변경하지 않았다.
+
+### 1. 요구사항 전달과 계획 확인
+
+<figure>
+  <img src="{{ '/assets/images/agent-pipeline/slack-request.webp' | relative_url }}" alt="Slack에서 사용자가 조사계획을 요청하고 Hermes가 도구를 사용해 범위를 확인하는 대화" loading="lazy" width="1080" height="1800" style="display:block;width:100%;max-width:540px;height:auto;margin:auto;">
+  <figcaption>Slack에서 요구사항과 승인 단계를 전달한다. 에이전트는 관련 도구를 사용하고 조사 범위를 제안한다. 입시 주제는 개발 환경을 활용한 별도 프로젝트의 사례다.</figcaption>
+</figure>
+
+### 2. GitHub 푸시와 원격 검증 결과 수신
+
+<figure>
+  <img src="{{ '/assets/images/agent-pipeline/slack-github-push.webp' | relative_url }}" alt="Hermes가 GitHub 공개 저장소 생성과 README 푸시 및 원격 커밋 검증 완료를 Slack으로 보고하는 화면" loading="lazy" width="1080" height="1800" style="display:block;width:100%;max-width:540px;height:auto;margin:auto;">
+  <figcaption>공개 저장소 생성, README 푸시, 원격 커밋 검증 결과가 Slack으로 돌아온다. 이 화면은 UI 코드 추가 전 첫 README 커밋 시점의 기록이다.</figcaption>
+</figure>
+
+이 두 이미지는 요청·계획 수립과 GitHub 반영 단계를 보여준다. ngrok UI 확인 화면을 캡처한 이미지는 아니며, 해당 단계의 실행 구조와 검증 범위는 위 본문에 별도로 설명했다.
