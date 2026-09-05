@@ -159,4 +159,18 @@ ngrok http http://127.0.0.1:3000 --inspect=false
   <figcaption>공개 저장소 생성, README 푸시, 원격 커밋 검증 결과가 Slack으로 돌아온다. 이 화면은 UI 코드 추가 전 첫 README 커밋 시점의 기록이다.</figcaption>
 </figure>
 
-이 두 이미지는 요청·계획 수립과 GitHub 반영 단계를 보여준다. ngrok UI 확인 화면을 캡처한 이미지는 아니며, 해당 단계의 실행 구조와 검증 범위는 위 본문에 별도로 설명했다.
+### 3. Slack에서 ngrok 미리보기 재실행 요청
+
+<figure>
+  <img src="{{ '/assets/images/agent-pipeline/slack-ngrok-preview.webp' | relative_url }}" alt="Slack 요청으로 UI 서버와 ngrok 터널을 다시 실행하고 접속 결과를 보고하는 대화" loading="lazy" width="1080" height="1660" style="display:block;width:100%;max-width:540px;height:auto;margin:auto;">
+  <figcaption>휴대폰에서 화면을 확인하기 위해 Slack으로 재실행을 요청했다. 에이전트는 UI 서버와 터널을 실행하고 외부 응답을 확인했다. 공개용 이미지에서는 실명·프로필 사진과 종료된 임시 URL을 가렸다.</figcaption>
+</figure>
+
+### 4. 휴대폰에서 실제 개발 화면 확인
+
+<figure>
+  <img src="{{ '/assets/images/agent-pipeline/ngrok-mobile-ui.webp' | relative_url }}" alt="사용자가 휴대폰으로 ngrok 주소에 접속해 촬영한 진학노트 UI 프로토타입" loading="lazy" width="1080" height="1980" style="display:block;width:100%;max-width:540px;height:auto;margin:auto;">
+  <figcaption>사용자가 직접 제공한 휴대폰 캡처다. 대학 검색·전형 필터·관심 목록의 화면 구성을 확인할 수 있다. 실제 입결 DB와 Kanana는 미연결 상태이며 화면에도 이를 표시했다. 상태 표시줄·주소창·하단 시스템 UI는 잘랐다.</figcaption>
+</figure>
+
+이 캡처는 해당 휴대폰에서 페이지를 열어 확인했다는 기록이며, 모든 모바일 기기의 호환성이나 모델 추론 성능을 보장하지 않는다. 캡처 후 사용자 요청에 따라 UI 서버와 ngrok 터널을 다시 종료했다.
